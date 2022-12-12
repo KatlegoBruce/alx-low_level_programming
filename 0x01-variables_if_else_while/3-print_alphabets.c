@@ -1,26 +1,20 @@
 #include <stdio.h>
 /**
- * main - Entry Point
- *
- * Return: Always 0 (success)
+ *main - entry point
+ *Description: random number in n +ve/-ve
+ *Return: 0 on success
  */
 int main(void)
 {
-	char c = 'a';
-
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
-
-	c = 'A';
-
-	while (c <= 'Z')
-	{
-		putchar(c);
-		c++;
-	}
-	putchar('\n');
-	return (0);
+int firstSLetter, firstCletter, n;
+for (firstSLetter = 97, n = 1; n < 27; firstSLetter++, n++)
+{
+putchar(firstSLetter);
+}
+for (firstCletter = 65, n = 1; n < 27; firstCletter++, n++)
+{
+putchar(firstCletter);
+}
+putchar(10);
+return (0);
 }

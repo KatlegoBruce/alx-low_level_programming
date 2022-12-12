@@ -6,10 +6,16 @@
  */
 int main(void)
 {
-int firstLetter, n;
-for (firstLetter = 122, n = 1; n < 27; firstLetter--, n++)
+int num;
+for (num = 0; num < 100; num++)
 {
-putchar(firstLetter);
+putchar((num / 10) + '0');
+putchar((num % 10) + '0');
+if (num < 99)
+{
+putchar(44);
+putchar(32);
+}
 }
 putchar(10);
 return (0);

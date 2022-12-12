@@ -1,18 +1,16 @@
 #include <stdio.h>
 /**
- * main - Entry Point
- *
- * Return: Always 0 (success)
+ *main - entry point
+ *Description: random number in n +ve/-ve
+ *Return: 0 on success
  */
 int main(void)
 {
-	int c = 0;
-
-	while (c < 10)
-	{
-		putchar(48 + c);
-		c++;
-	}
-	putchar('\n');
-	return (0);
+int num, i;
+for (num = 48, i = 0; i < 10; num++, i++)
+{
+putchar(num);
+}
+putchar(10);
+return (0);
 }

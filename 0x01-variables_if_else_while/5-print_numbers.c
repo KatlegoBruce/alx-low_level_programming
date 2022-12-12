@@ -1,20 +1,16 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
 /**
- * main - Entry Point
- *
- * Return: Always (0)
+ *main - entry point
+ *Description: random number in n +ve/-ve
+ *Return: 0 on success
  */
 int main(void)
 {
-	char c = '0';
-
-	while (c <= '9')
-	{
-		putchar(c);
-		c++;
-	}
-	putchar('\n');
-	return (0);
+int n;
+for (n = 0; n < 10; n++)
+{
+printf("%d", n);
+}
+printf("\n");
+return (0);
 }

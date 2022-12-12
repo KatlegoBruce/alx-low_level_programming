@@ -1,21 +1,18 @@
 #include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (success)
+ *main - entry point
+ *Description: random number in n +ve/-ve
+ *Return: 0 on success
  */
 int main(void)
 {
-	char c = 'a';
-
-	while (c <= 'z')
-	{
-		if (c != 'e' && c != 'q')
-		{
-			putchar(c);
-		}
-		c++;
-	}
-	putchar('\n');
-	return (0);
+int firstLetter, n;
+for (firstLetter = 97, n = 1; n < 27; firstLetter++, n++)
+{
+if (firstLetter == 101 || firstLetter == 113)
+continue;
+putchar(firstLetter);
+}
+putchar(10);
+return (0);
 }

@@ -1,13 +1,15 @@
-#include "holberton.h"
+#include "main.h"
 /**
- *add - sum of two numbers.
- *@n: number to be added.
- *@p: number to be added.
+ * add - adds two integrers and returns the result
  *
- *Return: sum.
+ * @x: number being added
+ *
+ * @y: number being added
+ *
+ * Return: Always 0.
+ *
  */
-int add(int n, int p)
+int add(int x, int y)
 {
-int sum = n + p;
-return (sum);
+	return (x + y);
 }
